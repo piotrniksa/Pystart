@@ -4,9 +4,11 @@ from random import choice
 def play_game(pl_choice: str, com_choice: str) -> int:
     if pl_choice == com_choice:
         return 0
-    if pl_choice == 'papier' and com_choice == 'kamień' or pl_choice == 'kamień' and com_choice == 'nożyce' or pl_choice == 'nożyce' and com_choice == 'papier':
+    if pl_choice == 'papier' and com_choice == 'kamień' or pl_choice == 'kamień' and com_choice == 'nożyce' or \
+            pl_choice == 'nożyce' and com_choice == 'papier':
         return 1
-    if pl_choice == 'kamień' and com_choice == 'papier' or pl_choice == 'nożyce' and com_choice == 'kamień' or pl_choice == 'papier' and com_choice == 'nożyce':
+    if pl_choice == 'kamień' and com_choice == 'papier' or pl_choice == 'nożyce' and com_choice == 'kamień' or \
+            pl_choice == 'papier' and com_choice == 'nożyce':
         return 2
 
 
