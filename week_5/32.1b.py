@@ -5,4 +5,4 @@ with open('przychody.csv') as input_file:
         created_at, title, value = line_arr
         summary += int(value)
 
-print(summary)
+print(summary) 

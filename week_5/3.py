@@ -11,7 +11,7 @@ project_day = start_date
 diff = end_date - start_date
 day_ern = float(input('Podaj Twoją dniówkę: '))
 
-for _ in range(0, diff.days + 1 ):
+for _ in range(0, diff.days + 1):
     print(f'Pracujesz w {project_day.strftime("%A, %d.%m.%Y")}')
     project_day += timedelta(days=1)
 
